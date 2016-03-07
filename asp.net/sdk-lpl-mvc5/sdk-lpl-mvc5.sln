@@ -1,0 +1,15 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "sdk-lpl-mvc5", "sdk-lpl-mvc5\sdk-lpl-mvc5.shproj", "{1B95BA3F-1111-456A-8B69-9EF295122E86}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		sdk-lpl-mvc5\sdk-lpl-mvc5.projitems*{1b95ba3f-1111-456a-8b69-9ef295122e86}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

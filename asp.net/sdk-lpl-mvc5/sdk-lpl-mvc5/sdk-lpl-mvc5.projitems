@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>1b95ba3f-1111-456a-8b69-9ef295122e86</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>sdk_lpl_mvc5</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Config.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controllers\CreationCompteController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controllers\MajCompteController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controllers\VerificationController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Filters\CheckHeaderAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\CreationCompteModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\UpdateAccountModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\UserInfoModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ValidationResponseModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\VerificationModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\Encrypt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\Hash.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\Timestamp.cs" />
+  </ItemGroup>
+</Project>
