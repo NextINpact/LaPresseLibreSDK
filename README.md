@@ -1,4 +1,5 @@
 # SDK La Presse Libre
+![logo](https://github.com/NextINpact/LaPresseLibreSDK/blob/master/logo-lpl.png "Logo LPL")
 
 Ceci est le dépot des SDK d'intégration pour les partenaires La Presse Libre. Actuellement trois langages sont supportés : PHP, NodeJS et ASP.NET.
 
