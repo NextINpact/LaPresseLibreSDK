@@ -7,6 +7,13 @@ namespace sdk_lpl_mvc5.Utils
 {
     public static class Encrypt
     {
+        /// <summary>
+        /// Chiffre une chaine de caractères à l'aide de Rijndael 256 (AES 256)
+        /// </summary>
+        /// <param name="plainText"></param>
+        /// <param name="keyString"></param>
+        /// <param name="ivString"></param>
+        /// <returns></returns>
         static public string EncryptRJ256(string plainText, string keyString, string ivString)
         {
             string sRet;
@@ -46,6 +53,13 @@ namespace sdk_lpl_mvc5.Utils
             return sRet;
         }
 
+        /// <summary>
+        /// Déchiffre une chaine de caractères à l'aide de Rijndael 256 (AES 256)
+        /// </summary>
+        /// <param name="cypherText"></param>
+        /// <param name="keyString"></param>
+        /// <param name="ivString"></param>
+        /// <returns></returns>
         static public string DecryptRJ256(string cypherText, string keyString, string ivString)
         {
             string sRet;

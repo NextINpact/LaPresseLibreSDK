@@ -30,15 +30,23 @@ namespace sdk_lpl_mvc5.Controllers
                 JsonConvert.DeserializeObject<CreationCompteModel>(Encrypt.DecryptRJ256(body,
                     Config.AESKey, Config.IV));
 
-            //TODO : à modifier
-            //Vous devez effectuer ici des traitements bdd pour remplir le modèle ValidationResponseModel
+            ValidationResponseModel model = new ValidationResponseModel { PartenaireID = Config.PartID };
 
-            ValidationResponseModel model = new ValidationResponseModel
+            if (Request.Headers.Contains("X-CTX"))
             {
-                IsValid = true,
-                PartenaireID = Config.PartID,
-                CodeUtilisateur = compte.CodeUtilisateur
-            };
+                // Ne pas modifier
+                model.CreateDummyModel();
+            }
+            else
+            {
+                // TODO : à modifier
+                // Ajoutez ici votre logique de verification des donnees en base a partir de l'objet CreationCompteModel
+                // Exemple de composition du modele a partir des donnees en base
+                model.IsValid = true;
+                model.PartenaireID = Config.PartID;
+                model.CodeUtilisateur = compte.CodeUtilisateur;
+                model.CodeEtat = Etat.Success;
+            }
 
             string json = Encrypt.EncryptRJ256(JsonConvert.SerializeObject(model), Config.AESKey, Config.IV);
 

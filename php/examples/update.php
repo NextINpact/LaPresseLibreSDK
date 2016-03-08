@@ -7,7 +7,6 @@ require_once "../models/ValidationReponseModel.php";
 
 /**
  * Implémentation basique du web-service de mise à jour
- * Le fichier Web.config indique le point de terminaison suivant : /ws/majCompte
  */
 try {
     $service = new MajCompteService($_SERVER);

@@ -2,6 +2,10 @@
 
 namespace sdk_lpl_mvc5.Models
 {
+    /// <summary>
+    /// Modèle pour la mise à jour de compte
+    /// Représente le modèle de données reçu lors de l'envoi d'une requete LPL de mise à jour de compte partenaire
+    /// </summary>
     public class UpdateAccountModel
     {
         public string CodeUtilisateur { get; set; }

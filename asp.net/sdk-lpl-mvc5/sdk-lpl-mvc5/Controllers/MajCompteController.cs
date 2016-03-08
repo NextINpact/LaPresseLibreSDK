@@ -29,9 +29,9 @@ namespace sdk_lpl_mvc5.Controllers
                 JsonConvert.DeserializeObject<UpdateAccountModel>(Encrypt.DecryptRJ256(body,
                     Config.AESKey, Config.IV));
 
-            //TODO : à modifier
-            //Vous devez effectuer ici des traitements bdd pour remplir le modèle ValidationResponseModel
-
+            // TODO : à modifier
+            // Ajoutez ici votre logique de verification des donnees en base à partir de l'objet UpdateAccountModel
+            // Exemple de composition du modele à partir des donnees en base
             ValidationResponseModel model = new ValidationResponseModel
             {
                 IsValid = true,

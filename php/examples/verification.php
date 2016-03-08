@@ -9,7 +9,6 @@ require_once "../utils/HeaderUtils.php";
 
 /**
  * Implémentation basique du web-service de vérification
- * Le fichier Web.config indique le point de terminaison suivant : /ws/verification
  */
 try {
     $service = new VerificationService($_SERVER);

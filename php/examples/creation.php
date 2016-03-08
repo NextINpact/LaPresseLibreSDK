@@ -8,7 +8,6 @@ require_once "../utils/HeaderUtils.php";
 
 /**
  * Implémentation basique du web-service de création de compte
- * Le fichier Web.config indique le point de terminaison suivant : /ws/creationCompte
  */
 try {
     $service = new CreationCompteService($_SERVER);

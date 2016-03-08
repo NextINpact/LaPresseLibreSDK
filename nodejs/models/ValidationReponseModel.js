@@ -1,3 +1,8 @@
+/**
+* Modèle de réponse
+* Représente le modèle de données envoyé en réponse d'une requête de création ou de mise à jour de compte partenaire
+* @author  Bastien Caubet <bastien@nextinpact.com>, Luc Raymond <luc@nextinpact.com>
+*/
 module.exports.ValidationModel = ValidationReponseModel;
 
 function ValidationReponseModel() {

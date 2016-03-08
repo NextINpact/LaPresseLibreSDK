@@ -3,6 +3,7 @@
 /**
  * Class Config
  * Pour connaitre vos identifiants, veuillez vous reporter à la documentation du SDK, à la section Configuration
+ * https://github.com/NextINpact/LaPresseLibreSDK/wiki/Int%C3%A9gration-et-configuration-du-SDK
  */
 class Config {
     /**

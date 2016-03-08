@@ -13,6 +13,11 @@ namespace sdk_lpl_mvc5.Filters
     [AttributeUsage(AttributeTargets.Method)]
     public class CheckHeaderAttribute : AuthorizationFilterAttribute
     {
+        /// <summary>
+        /// Vérification des informations contenus dans le header
+        /// Permet de valider la transaction après comparaison du hachage SHA1 entre les valeurs contenues dans les headers X-PART et X-TS plus le code secret et la valeur du header X-LPL
+        /// </summary>
+        /// <param name="actionContext"></param>
         public override void OnAuthorization(HttpActionContext actionContext)
         {
             if (!actionContext.Request.Headers.Contains("X-LPL") || !actionContext.Request.Headers.Contains("X-TS") ||

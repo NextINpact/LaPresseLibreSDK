@@ -32,15 +32,15 @@ namespace sdk_lpl_mvc5.Controllers
             UserInfoModel model = new UserInfoModel {PartenaireID = Config.PartID};
 
             if (Request.Headers.Contains("X-CTX"))
-            {
-                model.AccountExist = true;
-                model.Mail = obj.Mail;
-                model.CodeUtilisateur = obj.CodeUtilisateur;
+            { 
+                // Ne pas modifier
+                model.CreateDummyModel();
             }
             else
             {
-                //TODO : à modifer
-                //Vous devez ici effectuer des traitements en BDD pour vérifier les informations fournies par LPL
+                // TODO : à modifier
+                // Ajoutez ici votre logique de verification des donnees en base a partir de l'objet VerificationModel
+                // Exemple de composition du modele a partir des donnees en base
                 model.AccountExist = true;
                 model.Mail = obj.Mail;
                 model.CodeUtilisateur = obj.CodeUtilisateur;

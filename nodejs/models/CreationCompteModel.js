@@ -1,3 +1,9 @@
+/**
+* Modèle pour la création de compte
+* Représente le modèle de données reçu lors de l'envoi d'une requete LPL de création de compte partenaire
+* @author  Bastien Caubet <bastien@nextinpact.com>, Luc Raymond <luc@nextinpact.com>
+*/
+
 module.exports = CreationCompteModel;
 
 function CreationCompteModel(obj) {

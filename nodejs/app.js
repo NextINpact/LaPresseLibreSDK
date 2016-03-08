@@ -25,8 +25,6 @@ if(app.get("env") == "development") {
     app.use(errorHandler());
     
     app.use(function (req, res, next) {
-        console.log(req.body); // DEBUG
-        console.log("--------------------------------------------------- \n\n");
         next();
     });
 }
@@ -49,14 +47,16 @@ app.get("/ws/verification", LPLMiddleware.CheckRequestHeaders, function (req, re
     var crypt = new AESCrypt();
             
     if(LPLMiddleware.IsTestingContext(req)) {
+        // Ne pas modifier
         model.CreateDummyModel();
     } else {
         var json = LPLMiddleware.GetJsonFromRequest(crypt, req.query.crd);
 
         var vModel = new VerifModel(json);
 
-        // Ajoutez ici votre logique de v�rification des donn�es en base � partir de l'objet $verificationModel
-        // Exemple de composition du mod�le � partir des donn�es en base
+        // TODO : à modifier
+        // Ajoutez ici votre logique de verification des donnees en base à partir de l'objet vModel
+        // Exemple de composition du modele à partir des donnees en base
         model.Mail = "testabo@gmail.com";
         model.CodeUtilisateur = "123123-1231-123-12311";
         model.AccountExist = true;
@@ -82,14 +82,16 @@ app.post("/ws/creationCompte", LPLMiddleware.CheckRequestHeaders, function(req, 
     var model = new ValidResModel();
     
     if(LPLMiddleware.IsTestingContext(req)) {
+        // Ne pas modifier
         model.CreateDummyModel();
     } else {
         var json = LPLMiddleware.GetJsonFromRequest(crypt, req.body);
 
         var cModel = new CreaModel(json);
-
-        // Ajoutez ici votre logique de v�rification des donn�es en base � partir de l'objet $verificationModel
-        // Exemple de composition du mod�le � partir des donn�es en base
+        
+        // TODO : à modifier
+        // Ajoutez ici votre logique de verification des donnees en base a partir de l'objet cModel
+        // Exemple de composition du modele a partir des donnees en base
         model.PartenaireID = config.values.PARTENAIRE_ID;
         model.CodeUtilisateur = cModel.CodeUtilisateur;
         model.IsValid = true;
@@ -109,11 +111,12 @@ app.put("/ws/majCompte", LPLMiddleware.CheckRequestHeaders, function(req, res) {
     var model = new ValidResModel();
     
     var json = LPLMiddleware.GetJsonFromRequest(crypt, req.body);
-    console.log(json);
+
     var majModel = new MajModel(json);
 
-    // Ajoutez ici votre logique de v�rification des donn�es en base � partir de l'objet $verificationModel
-    // Exemple de composition du mod�le � partir des donn�es en base
+    // TODO : à modifier
+    // Ajoutez ici votre logique de verification des donnees en base a partir de l'objet majModel
+    // Exemple de composition du modele a partir des donnees en base
     model.PartenaireID = config.values.PARTENAIRE_ID;
     model.CodeUtilisateur = majModel.CodeUtilisateur;
     model.IsValid = true;

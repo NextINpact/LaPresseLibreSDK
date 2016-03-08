@@ -2,6 +2,10 @@
 
 namespace sdk_lpl_mvc5.Models
 {
+    /// <summary>
+    /// Modèle pour la création de compte
+    /// Représente le modèle de données reçu lors de l'envoi d'une requete LPL de création de compte partenaire
+    /// </summary>
     public class CreationCompteModel
     {
         public string CodeUtilisateur { get; set; }
