@@ -10,7 +10,7 @@ Ceci est le dépot des SDK d'intégration pour les partenaires La Presse Libre. 
 Pour plus d'informations concernant le fonctionnement ou la configuration du SDK, veuillez vous rendre sur la page [Wiki](https://github.com/NextINpact/LaPresseLibreSDK/wiki).
 
 
-
+# License
 The MIT License (MIT)
 Copyright (c) 2016 INpact Mediagroup
 
