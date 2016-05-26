@@ -1,6 +1,6 @@
 {
   "name": "SDKLPL-node",
-  "version": "1.0.0",
+  "version": "1.0.2-rc1",
   "description": "SDK pour l'intégration des partenaire sur La Presse Libre",
   "main": "app.js",
   "scripts": {
