@@ -10,7 +10,8 @@
  */
 module.exports = InformationCompteModel;
 
-function InformationCompteModel(mail, userName) {
+function InformationCompteModel(mail, userName, guid) {
     this.Email = mail;
     this.Pseudo = userName;
+    this.Guid = guid;
 }
