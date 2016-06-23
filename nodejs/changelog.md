@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Updated
 - Release candidate
 - Ajout license MIT
+- Mise à jour de l'inscription partenaire (ajout du GUID dans les paramètres)
 
 ## 1.0.0 - 2016-02-02
 ### Added
