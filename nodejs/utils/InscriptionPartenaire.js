@@ -19,8 +19,8 @@ var AESCrypt = require("../utils/AesCrypt");
  * @param userName
  * @return string
  */
-exports.GenerateUrl = function(mail, userName) {
-    var model = new InfoModel(mail, userName);
+exports.GenerateUrl = function(mail, userName, guid) {
+    var model = new InfoModel(mail, userName, guid);
     
     var json = JSON.stringify(model);
     
