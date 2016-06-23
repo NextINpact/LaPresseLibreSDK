@@ -27,13 +27,13 @@ class InscriptionPartenaire
      * @param $userName
      * @return string
      */
-    public static function GenerateUrl($email, $userName) {
-        $model = new InformationsCompteModel($email, $userName);
+    public static function GenerateUrl($email, $userName, $guid) {
+        $model = new InformationsCompteModel($email, $userName, $guid);
 
         $json = json_encode($model);
 
         $url = "http://www.lapresselibre.fr/inscription-partenaire?"
-            . "user=" . rawurlencode(base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, Config::AES_KEY, $json, MCRYPT_MODE_CBC, Config::IV)))
+            . "user=" . rawurlencode(base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_128, Config::AES_KEY, $json, MCRYPT_MODE_CBC, Config::IV)))
             . "&partId=" . Config::PARTENAIRE_ID;
 
         return $url;
