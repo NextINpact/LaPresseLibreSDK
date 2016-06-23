@@ -17,10 +17,12 @@ class InformationsCompteModel
 {
     public $Email;
     public $Pseudo;
+    public $Guid
 
-    public function __construct($email, $userName)
+    public function __construct($email, $userName, $guid)
     {
         $this->Email = $email;
         $this->Pseudo = $userName;
+        $this->Guid = $guid
     }
 }
