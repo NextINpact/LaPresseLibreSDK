@@ -27,6 +27,6 @@ exports.GenerateUrl = function(mail, userName, guid) {
     var crypt = new AESCrypt();
     
     return "http://www.lapresselibre.fr/inscription-partenaire?" + 
-              `user=${encodeURIComponent(crypt.rijndael256Encrypt(config.values.AES_KEY, config.values.IV, json))}` +
+              `user=${encodeURIComponent(crypt.rijndael128Encrypt(config.values.AES_KEY, config.values.IV, json))}` +
               `&partId=${config.values.PARTENAIRE_ID}`;
 };
