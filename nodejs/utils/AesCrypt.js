@@ -23,8 +23,8 @@ function AESCrypt() { }
  * @param data
  * @return string
  */
-AESCrypt.prototype.rijndael256Encrypt = function (aesKey, iv, data) {
-    var encipher = crypto.createCipheriv("aes-256-cbc", aesKey, iv);
+AESCrypt.prototype.rijndael128Encrypt = function (aesKey, iv, data) {
+    var encipher = crypto.createCipheriv("aes-128-cbc", aesKey, iv);
 
     var encryptdata = encipher.update(data, "utf8", "base64");
 
@@ -42,8 +42,8 @@ AESCrypt.prototype.rijndael256Encrypt = function (aesKey, iv, data) {
  * @param data
  * @return string
  */
-AESCrypt.prototype.rijndael256Decrypt = function (aesKey, iv, data) {
-    var decipher = crypto.createDecipheriv("aes-256-cbc", aesKey, iv);
+AESCrypt.prototype.rijndael128Decrypt = function (aesKey, iv, data) {
+    var decipher = crypto.createDecipheriv("aes-128-cbc", aesKey, iv);
     
     decipher.setAutoPadding(false);
 
