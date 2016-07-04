@@ -72,7 +72,7 @@ exports.AddResponseHeaders = function(res) {
  * @return string
  */
 exports.GetJsonFromRequest = function(crypt, reqValue) {
-    var json = crypt.rijndael256Decrypt(config.values.AES_KEY, config.values.IV, reqValue);
+    var json = crypt.rijndael128Decrypt(config.values.AES_KEY, config.values.IV, reqValue);
     json = json.replace(/[\x00-\x1F\x80-\xFF]+/, "");
     return JSON.parse(json);
 };
