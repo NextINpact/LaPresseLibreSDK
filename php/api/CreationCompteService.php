@@ -55,7 +55,7 @@ class CreationCompteService extends LPLAbstractService
     * @param    $status
     * @return   Array
     */
-    public function createResponse($data, $status){
+    public function createResponse($data, $status = 200){
         return parent::createResponse($data, $status);
     }
 }
