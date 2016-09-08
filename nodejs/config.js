@@ -15,14 +15,14 @@ exports.values = {
     * À modifier
     * @var string
     */
-    AES_KEY: "anjueolkdiwpoidaanjueolkdiwpoida",
+    AES_KEY: "UKKzV7sxiGx3uc0auKrUO2kJTT2KSCeg",
     
     /**
     * Vecteur d'initialisation pour le chiffrage AES Rijndael 256
     * À modifier
     * @var string
     */
-    IV: "4528711254935489",
+    IV: "7405589013321961",
     
     /**
     * Numéro partenaire LPL
@@ -36,5 +36,5 @@ exports.values = {
     * À modifier
     * @var string
     */
-    CODE_SECRET: "af3zfA2qd",
+    CODE_SECRET: "mGoMuzoX8u",
 };

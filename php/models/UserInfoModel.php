@@ -27,5 +27,6 @@ class UserInfoModel
         $this->Mail = "dummy@gmail.com";
         $this->CodeUtilisateur = "dummy";
         $this->AccountExist = TRUE;
+        $this->PartenaireID = 0;
     }
 }

@@ -19,14 +19,14 @@ class Config {
     * À modifier
     * @var string
     */
-    const AES_KEY = "anjueolkdiwpoidaanjueolkdiwpoida";
+    const AES_KEY = "UKKzV7sxiGx3uc0auKrUO2kJTT2KSCeg";
 
     /**
     * Vecteur d'initialisation pour le chiffrage AES Rijndael 256
     * À modifier
     * @var string
     */
-    const IV = "4528711254935489";
+    const IV = "7405589013321961";
 
     /**
     * Numéro partenaire LPL
@@ -40,5 +40,5 @@ class Config {
     * À modifier
     * @var string
     */
-    const CODE_SECRET = "af3zfA2qd";
+    const CODE_SECRET = "mGoMuzoX8u";
 }

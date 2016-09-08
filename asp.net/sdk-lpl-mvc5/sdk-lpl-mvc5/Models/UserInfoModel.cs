@@ -33,6 +33,7 @@ namespace sdk_lpl_mvc5.Models
             model.AccountExist = true;
             model.Mail = "dummy@gmail.com";
             model.CodeUtilisateur = "dummy1234";
+            model.PartenaireID = 0;
         }
     }
 }

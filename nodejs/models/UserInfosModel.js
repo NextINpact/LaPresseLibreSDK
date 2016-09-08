@@ -24,4 +24,5 @@ UserInfosModel.prototype.CreateDummyModel = function () {
     this.Mail = "dummy@gmail.com";
     this.CodeUtilisateur = "dummy1234";
     this.AccountExist = true;
+    this.PartenaireID = 0;
 }
