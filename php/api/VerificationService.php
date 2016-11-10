@@ -33,7 +33,7 @@ class VerificationService extends LPLAbstractService
      * Obtient les informations déchiffrées envoyé par LPL.
      * Déchiffre le json et retourne l'objet correspondant
      * @access   public
-     * @return CreationCompteModel
+     * @return VerificationModel
      * @throws Exception
      * @internal param $request
      */
